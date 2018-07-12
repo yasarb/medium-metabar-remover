@@ -1,0 +1,22 @@
+{
+    "name": "Medium Metabar Remover Extension",
+    "description": "Chrome extension to remove metabar and bottom bar of websites using Medium platform",
+    "version": "0.1",
+    "manifest_version": 2,
+    "author": "ysrbdlgn",
+    
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
